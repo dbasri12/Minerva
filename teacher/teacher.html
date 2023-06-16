@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- PAGE METADATA -->
+    <title>Minerva - Teacher</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An Education Assistant built using microservices on AWS">
+    <meta name="author" content="Opkar Ghadu">		
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">Minerva</h1>
+        <p>CMPT 474 Project</p>
+    </header>
+
+    <div class="border"></div>
+    
+    <main id="mainPage">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+
+        <h2>TEACHER</h2>
+
+        <div id="form">
+        <form onsubmit="return callAPI(this)" id="teacherForm">
+            <br>
+            <label for="teacherForm">
+                Question:<br>
+                <textarea id="teacherForm" name="teacherForm" rows="10" cols="50" placeholder="Enter Your Query..."></textarea>
+            </label>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+            <br>
+            <br>
+        </form>
+        
+    
+        </div>
+    </main>
+
+
+
+
+    <div class="border"></div>
+
+    <footer id="footer">
+        <p>By Opkar Ghadu, Daniel Olivera, Edward Chu,
+            Darryl Basri, Jetson Foster
+        </p>
+    </footer>
+
+</body>
+
+</html>
